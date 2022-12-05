@@ -1,12 +1,14 @@
-function palindrome(str) 
+let text = prompt ("Inserisci un palindromo");
+let checked_word = palindrome(text);
+
+function palindrome(word) 
 {
-    str = str.toLowerCase();
-    return str === str.split("").reverse().join("");
+    word = word.toLowerCase();
+    let check_word = word.split("").reverse().join("");
+    return check_word;
 }  
 
-let text = prompt ("Inserisci un palindromo");
-
-if (text == palindrome){
+if (text == checked_word){
     console.log('it\'s a palindrome!');
 } else {
     console.log('it\'s not a palindrome')
